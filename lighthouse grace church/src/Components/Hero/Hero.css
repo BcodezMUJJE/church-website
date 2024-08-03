@@ -13,6 +13,7 @@
 .hero-text{
     text-align: center;
     max-width: 800px;
+    opacity: .7;
 }
 
 .hero-text h1{

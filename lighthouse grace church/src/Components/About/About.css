@@ -1,5 +1,5 @@
 .about{
-    margin: 100% auto;
+    margin: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,8 +11,28 @@
 .about-right{
     flex-basis: 56%;
 }
-.about-img{
+.about-img {
     width: 100%;
-    border-radius: 11px;
-    box-shadow: 0 0 10px rgba(0,0,0,0
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    line-height: 1.3rem;
+  }
+.about h3{
+    font-weight: 600;
+    font-size: 16px;
+    color: #212ea0;
+}
+.about h2{
+    font-size: 35px;
+    color: #000f38;
+    margin: 10px 0;
+    max-width: 400px;
+}
+.about p{
+    font-size: 16px;
+    color: #676767;
+    margin-bottom: 14px;
+    line-height: 1.5;
 }

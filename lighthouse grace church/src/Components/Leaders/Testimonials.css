@@ -1,0 +1,91 @@
+/* Container for testimonials */
+.testimonials {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 60px 0; /* Top and bottom padding */
+    position: relative; /* Relative positioning for slider */
+  }
+  
+  /* Center the container */
+  .container {
+    max-width: 1720px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Slider container */
+  .slider {
+    position: relative; /* Relative positioning for slider */
+    width: 100%; /* Full width for slider */
+    height: 100%; /* Full height for slider */
+    overflow: hidden; /* Hide overflow for slider */
+  }
+  
+  /* Slider track */
+  .slider-track {
+    display: flex; /* Use flexbox for track */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+  }
+  
+  /* Individual testimonial item */
+  .item {
+    text-align: center; /* Center the text */
+    padding: 20px; /* Padding around each item */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    background-color: #5162e0; /* White background for testimonials */
+    border-radius: 10px; /* Rounded corners */
+    width: 100%; /* Full width for item */
+    flex-shrink: 0; /* Prevent item from shrinking */
+  }
+  
+  /* Image styles */
+  .img-circle {
+    width: 100px; /* Fixed width for images */
+    height: 100px; /* Fixed height for images */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 15px; /* Spacing below the image */
+  }
+  
+  /* Testimonial text */
+  .shadow-effect {
+    position: relative; /* Relative positioning for shadow */
+    padding: 20px; /* Padding for the text */
+    background: #f0f0f0; /* Light gray background for text */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Name of the person giving the testimonial */
+  .testimonial-name {
+    font-weight: bold; /* Bold text for names */
+    margin-top: 15px; /* Margin above the name */
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #ececec; /* Color for names */
+  }
+  
+  /* Navigation buttons */
+  .nav-btn {
+    position: absolute; /* Absolute positioning for buttons */
+    top: 50%; /* Center buttons vertically */
+    transform: translateY(-50%); /* Adjust button position */
+    cursor: pointer; /* Pointer cursor for buttons */
+    font-size: 24px; /* Larger font size for buttons */
+    color: #4e60c8; /* Color for buttons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-btn:hover {
+    color: #333; /* Darker color for hover effect */
+  }
+  
+  .prev-btn {
+    left: 10px; /* Position for previous button */
+  }
+  
+  .next-btn {
+    right: 10px; /* Position for next button */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .item {
+      margin-bottom: 30px; /* Margin for mobile view */
+    }
+  }  

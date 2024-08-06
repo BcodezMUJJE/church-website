@@ -1,6 +1,5 @@
-nav{
+nav {
     width: 100%;
-    /*background: #333;*/
     color: #fff;
     padding: 4px 0;
     position: fixed;
@@ -10,20 +9,74 @@ nav{
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    transition: background 0.5s;
 }
 
-.logo{
+.logo {
     width: 160px;
 }
 
-nav ul li{
+/* Navbar links */
+nav ul {
+    display: flex; /* Use flexbox for alignment */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+/* List item styles */
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 5px 20px;
     font-size: 16px;
 }
-.dark-nav{
+
+/* Dark navbar background */
+.dark-nav {
     background: #39428d;
     color: #fff;
-    transition: 0.5s;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stack the lines vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hamburger lines */
+.hamburger div {
+    width: 25px; /* Width of hamburger lines */
+    height: 3px; /* Height of hamburger lines */
+    background-color: #fff; /* White color for lines */
+    margin: 4px 0; /* Spacing between lines */
+}
+
+/* Media queries for responsive navbar */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute; /* Positioning absolute for dropdown */
+        top: 50px; /* Space below the navbar */
+        left: 0; /* Align left */
+        width: 100%; /* Full width */
+        background: #39428d; /* Background for dropdown */
+        padding: 10px 0; /* Padding for dropdown */
+    }
+
+    /* Show the menu when active */
+    nav ul.active {
+        display: flex; /* Show the menu */
+    }
+
+    /* Show hamburger menu on smaller screens */
+    .hamburger {
+        display: flex; /* Show hamburger */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical margin for items */
+        text-align: center; /* Center align text */
+    }
 }

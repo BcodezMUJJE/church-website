@@ -5,7 +5,9 @@ import Programs from './Components/Programs/Program';
 import Title from './Components/Title/Title';
 import About from './Components/About/About';
 import Services from './Components/Services/Services';
-import Leaders from './Components/Leaders/Leader';
+import Leaders from './Components/Leaders/Testimonials';
+import Testimonials from './Components/Leaders/Testimonials';
+import Contact from './Components/Contact/Contact';
 
 const App = () => {
   return (
@@ -19,7 +21,9 @@ const App = () => {
         <Title subTitle='Services' title='Experiencing God Together in Community'/>
         <Services/>
         <Title subTitle='Our Leaders' title='There Role'/>
-        <Leaders/>
+        <Testimonials/>
+        <Title subTitle='Contact Us' title='Get In Touch'/>
+        <Contact/>
       </div>
     </div>
   );

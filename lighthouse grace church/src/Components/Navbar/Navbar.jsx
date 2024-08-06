@@ -3,8 +3,8 @@ import './Navbar.css';
 import logo from '../../assets/loggo.png';
 
 const Navbar = () => {
-
   const [sticky, setSticky] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // State to control menu visibility
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,16 +16,24 @@ const Navbar = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [])
+  }, []);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen); // Toggle the menu open/closed
+  };
 
   return (
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
-      <img src={logo} alt="Logo" className='logo'/>
-      <ul>
+      <img src={logo} alt="Logo" className='logo' />
+      <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul className={menuOpen ? 'active' : ''}>
         <li>Home</li>
         <li>Ministries</li>
         <li>Events</li>
@@ -34,7 +42,7 @@ const Navbar = () => {
         <li><button className='btn'>Contact Us</button></li>
       </ul>
     </nav>
-  )
-} 
+  );
+};
 
 export default Navbar;

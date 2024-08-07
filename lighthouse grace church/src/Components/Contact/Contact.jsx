@@ -5,6 +5,32 @@ import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'; // Use this for the location icon
 
 const Contact = () => {
+
+    const [result, setResult] = React.useState("");
+
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      setResult("Sending....");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "e1d9465e-9e2e-4590-99bc-73ba95ebfb91");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    };
+
     return (
         <div className='contact'>
             <div className='contact-col'>
@@ -33,7 +59,7 @@ const Contact = () => {
                 </ul>
             </div>
             <div className='contact-col'>
-                <form>
+                <form onSubmit={onSubmit}>
                     <label>Your Name</label>
                     <input type='text' name='name' placeholder='Enter your name' required/>
                     <label>Phone Number</label>
@@ -42,7 +68,7 @@ const Contact = () => {
                     <textarea name='message' id='' rows='6' placeholder='Enter message' required></textarea>
                     <button type='submit' className='btn dark-btn'>Submit now</button>
                 </form>
-                <span>sending</span>
+                <span>{result}</span>
             </div>
         </div>
     );

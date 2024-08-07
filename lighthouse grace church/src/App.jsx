@@ -8,6 +8,8 @@ import Services from './Components/Services/Services';
 import Leaders from './Components/Leaders/Testimonials';
 import Testimonials from './Components/Leaders/Testimonials';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
+import Location from './Components/Location/Location';
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
         <Testimonials/>
         <Title subTitle='Contact Us' title='Get In Touch'/>
         <Contact/>
+        <Location/>
+        <Footer/>
       </div>
     </div>
   );

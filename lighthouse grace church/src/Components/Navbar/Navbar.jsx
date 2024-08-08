@@ -39,10 +39,10 @@ const Navbar = () => {
       <ul className={menuOpen ? 'active' : ''}>
         <li><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>
         <li><Link to='ministries' smooth={true} offset={-260} duration={500}>Ministries</Link></li>
-        <li><Link to='events' smooth={true} offset={-260} duration={500}>Events</Link></li>
+        <li><Link to='events' smooth={true} offset={-295} duration={500}>Events</Link></li>
         <li><Link to='about' smooth={true} offset={-260} duration={500}>About</Link></li>
         <li><Link to='location' smooth={true} offset={-260} duration={500}>Location</Link></li>
-        <li><Link to='contact' smooth={true} offset={-260} duration={500} className='btn'>Contact Us</Link></li>
+        <li><Link to='contact' smooth={true} offset={-295} duration={500} className='btn'>Contact Us</Link></li>
       </ul>
     </nav>
   );

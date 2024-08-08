@@ -17,10 +17,10 @@ const App = () => {
       <Navbar />
       <Hero />
       <div className="container">
-        <Title subTitle='Our Programs' title='Here Are Our Prgrams'/>
+        <Title subTitle='Our Programs' title='Here Are Our Programs'/>
         <Programs/>
         <About/>
-        <Title subTitle='Services' title='Experiencing God Together in Community'/>
+        <Title subTitle='Ministries' title='Experiencing God Together in Community'/>
         <Services/>
         <Title subTitle='Our Leaders' title='There Role'/>
         <Testimonials/>

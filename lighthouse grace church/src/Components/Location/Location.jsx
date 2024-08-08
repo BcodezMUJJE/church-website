@@ -3,7 +3,7 @@ import './Location.css';
 
 const Location = () => {
   return (
-    <div className="location-container">
+    <div className="location-container" id="location">
       <h1 className="location-title">Our Location</h1>
       <p className="location-address">
         DC Zone, Bulindo / Mulawa Shimoni Estate, Kira Municipality, Kampala Wakiso Metropolitan Area

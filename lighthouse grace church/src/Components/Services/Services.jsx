@@ -7,8 +7,8 @@ import gal_4 from '../../assets/childcam.jpg';
 
 const Services = () => {
     return (
-        <div className="trip">
-            <h1>Our Services</h1>
+        <div className="trip" id='ministries'>
+            <h1>Our Ministries</h1>
             <div className="tripcard">
                 <div className="t-card">
                     <div className="t-image">

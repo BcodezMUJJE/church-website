@@ -36,3 +36,45 @@
     margin-bottom: 14px;
     line-height: 1.5;
 }
+
+/* Responsive styles */
+@media (max-width: 850px) {
+    .about {
+        justify-content: center; /* Center content on smaller screens */
+    }
+
+    .about-left {
+        flex-basis: 100%; /* Full width for left section */
+        margin-bottom: 20px; /* Space below the left section */
+    }
+
+    .about-right {
+        flex-basis: 100%; /* Full width for right section */
+    }
+
+    .about h2 {
+        font-size: 28px; /* Reduce heading size for smaller screens */
+    }
+
+    .about p {
+        font-size: 14px; /* Reduce paragraph font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        margin: 10px; /* Adjust margin for very small screens */
+    }
+
+    .about h2 {
+        font-size: 24px; /* Further reduce heading size */
+    }
+
+    .about p {
+        font-size: 13px; /* Further reduce paragraph font size */
+    }
+
+    .about-img {
+        height: 200px; /* Adjust image height for smaller screens */
+    }
+}

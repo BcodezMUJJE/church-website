@@ -23,3 +23,40 @@
     height: 450px;
     border: none;
   }
+
+  /* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .location-container {
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .location-title {
+      font-size: 22px; /* Slightly smaller title */
+  }
+
+  .location-address {
+      font-size: 16px; /* Slightly smaller address */
+  }
+
+  .location-map {
+      height: 300px; /* Reduce map height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .location-container {
+      padding: 10px; /* Further reduce padding for very small screens */
+  }
+
+  .location-title {
+      font-size: 20px; /* Smaller title for very small screens */
+  }
+
+  .location-address {
+      font-size: 14px; /* Smaller address for very small screens */
+  }
+
+  .location-map {
+      height: 250px; /* Further reduce map height for very small screens */
+  }
+}

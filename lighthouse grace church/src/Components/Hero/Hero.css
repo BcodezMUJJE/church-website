@@ -26,3 +26,27 @@
     margin: 10px auto 20px;
     line-height: 1.4;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 48px; /* Reduce heading size for tablets */
+    }
+
+    .hero-text p {
+        max-width: 90%; /* Allow paragraph to use more width */
+        margin: 10px auto; /* Center paragraph */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text h1 {
+        font-size: 36px; /* Further reduce heading size for mobile */
+    }
+
+    .hero-text p {
+        font-size: 14px; /* Smaller font size for paragraph */
+        line-height: 1.3; /* Adjust line height for readability */
+        max-width: 95%; /* Allow paragraph to use even more width */
+    }
+}

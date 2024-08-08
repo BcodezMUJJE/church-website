@@ -54,3 +54,43 @@
     display: block;
     margin: 20px 0;
 }
+
+/* Responsive styles */
+@media (max-width: 850px) {
+    .contact {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center align columns */
+    }
+
+    .contact-col {
+        flex-basis: 100%; /* Make each column full width */
+        margin-bottom: 30px; /* Space between columns */
+    }
+
+    .contact-col h3 {
+        font-size: 22px; /* Slightly reduce font size for headings */
+    }
+
+    .contact-col p {
+        font-size: 15px; /* Reduce paragraph font size */
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        margin: 40px auto; /* Adjust margin for very small screens */
+    }
+
+    .contact-col h3 {
+        font-size: 20px; /* Further reduce heading size */
+    }
+
+    .contact-col p {
+        font-size: 14px; /* Further reduce paragraph font size */
+    }
+
+    .contact form input,
+    .contact form textarea {
+        padding: 12px; /* Adjust padding for input fields */
+    }
+}

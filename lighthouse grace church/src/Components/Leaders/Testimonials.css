@@ -83,9 +83,41 @@
     right: 10px; /* Position for next button */
   }
   
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .item {
+/* Responsive styles */
+@media (max-width: 768px) {
+  .item {
       margin-bottom: 30px; /* Margin for mobile view */
-    }
-  }  
+      padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .img-circle {
+      width: 80px; /* Smaller width for images on mobile */
+      height: 80px; /* Smaller height for images on mobile */
+  }
+
+  .testimonial-name {
+      font-size: 1.1em; /* Smaller font size for names */
+  }
+
+  .nav-btn {
+      font-size: 20px; /* Smaller button size for mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials {
+      padding: 40px 0; /* Adjust padding for very small screens */
+  }
+
+  .item {
+      padding: 10px; /* Further reduce padding for very small screens */
+  }
+
+  .testimonial-name {
+      font-size: 1em; /* Smaller font size for very small screens */
+  }
+
+  .nav-btn {
+      font-size: 18px; /* Smaller button size for very small screens */
+  }
+}  

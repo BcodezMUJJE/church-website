@@ -57,16 +57,57 @@
     padding-bottom: .5rem;
 }
 
-@media screen and (max-width: 850px){
-    .footer{
-        padding: 4rem 2rem;
+/* Responsive styles */
+@media screen and (max-width: 850px) {
+    .footer {
+        padding: 4rem 2rem; /* Adjust padding for smaller screens */
     }
 
-    .footer i{
-        margin: 1rem 1rem 0 0;
+    .top h1 {
+        font-size: 2rem; /* Reduce heading size */
     }
 
-    .bottom div{
-        width: 50%;
+    .top p {
+        font-size: 1rem; /* Reduce paragraph font size */
+    }
+
+    .bottom div {
+        width: 50%; /* Use half width for bottom sections */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 2rem 1rem; /* Further reduce padding for very small screens */
+    }
+
+    .top {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+    }
+
+    .top i {
+        font-size: 1.5rem; /* Smaller icon size */
+        margin: 0.5rem 0; /* Margin adjustments */
+    }
+
+    .bottom {
+        flex-direction: column; /* Stack bottom items vertically */
+        align-items: center; /* Center items */
+        padding-top: 1rem; /* Adjust padding */
+    }
+
+    .bottom div {
+        width: 100%; /* Full width for bottom sections */
+        margin-bottom: 1rem; /* Space between sections */
+    }
+
+    .bottom h4 {
+        font-size: 1.2rem; /* Smaller heading size */
+    }
+
+    .bottom a {
+        font-size: 1rem; /* Smaller link size */
     }
 }

@@ -10,6 +10,7 @@ import Testimonials from './Components/Leaders/Testimonials';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import Location from './Components/Location/Location';
+import Story from './Components/Story/Story';
 
 const App = () => {
   return (
@@ -24,6 +25,8 @@ const App = () => {
         <Services/>
         <Title subTitle='Our Leaders' title='There Role'/>
         <Testimonials/>
+        <Title subTitle='Our Story' title='A Story of Lighthouse Grace Church/Minitries'/>
+        <Story/>
         <Title subTitle='Contact Us' title='Get In Touch'/>
         <Contact/>
         <Location/>

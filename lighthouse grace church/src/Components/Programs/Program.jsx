@@ -2,7 +2,7 @@ import React from 'react'
 import './Program.css'
 import Prog1 from '../../assets/praying-children.jpg'
 import Prog2 from '../../assets/married.jpg'
-import Prog3 from '../../assets/youth.jpg'
+import Prog3 from '../../assets/youthBulindo.jpg'
 
 const Programs = () => {
     return (
@@ -16,13 +16,13 @@ const Programs = () => {
             <div className="program">
                 <img src={Prog2} alt="" />
                 <div className="caption">
-                    <p>Married Fire Camp</p>
+                    <p>Couples Fireplace</p>
                 </div>
             </div>
             <div className="program">
                 <img src={Prog3} alt="" />
                 <div className="caption">
-                    <p>Youth Experience</p>
+                    <p>Project Generations</p>
                 </div>
             </div>
         </div>

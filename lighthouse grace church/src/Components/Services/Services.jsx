@@ -1,9 +1,9 @@
 import React from "react";
 import './Services.css';
-import gal_1 from '../../assets/childcam.jpg';
+import gal_1 from '../../assets/children.jpeg';
 import gal_2 from '../../assets/BIBLE.jpg';
-import gal_3 from '../../assets/praying.jpeg';
-import gal_4 from '../../assets/childcam.jpg';
+import gal_3 from '../../assets/impartation.jpg';
+import gal_4 from '../../assets/prayersSteve.jpg';
 
 const Services = () => {
     return (
